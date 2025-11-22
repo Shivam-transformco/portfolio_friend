@@ -11,24 +11,28 @@ const projects = [
     category: "Mobile Application",
     tags: ["Dashboard", "Travel", "UI/UX"],
     image: ride,
+    behanceProfile: "https://www.behance.net/gallery/237242825/RIDE-WITH-ME-A-UI-UX-CASE-STUDY"
   },
   {
     title: "Trip8.ai - AI Powered Travel Planning App",
     category: "Web UI Design",
     tags: ["Web UI", "AI", "Travel"],
     image: trip,
+    behanceProfile: "https://www.behance.net/gallery/233427963/Trip8ai-AI-Powered-Travel-Planning-App-(User-POV)"
   },
   {
     title: "ISRO WEBSITE REDESIGN",
     category: "Web Design",
     tags: ["Space", "Web UI", "UX Case Study"],
     image: isro,
+    behanceProfile: "https://www.behance.net/gallery/232680397/ISRO-WEBSITE-REDESIGN"
   },
   {
     title: "Drivezy - Landing Page",
     category: "Web UI Design",
     tags: ["Landing page", "UI Design"],
     image: drivezy,
+    behanceProfile: "https://www.behance.net/gallery/237244345/DRIVEZY-TRANSPORTATION-LANDING-PAGE"
   },
 ];
 

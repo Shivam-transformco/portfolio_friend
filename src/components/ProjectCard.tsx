@@ -10,10 +10,11 @@ interface ProjectCardProps {
   index: number;
 }
 
-export function ProjectCard({ title, category, tags, image, index }: ProjectCardProps) {
+export function ProjectCard({ title, category, tags, image, index,behanceProfile }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
+    <a href={behanceProfile} target="_blank" rel="noopener noreferrer">
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -118,5 +119,6 @@ export function ProjectCard({ title, category, tags, image, index }: ProjectCard
         <div className="absolute bottom-0 left-0 w-20 h-20 border-b-2 border-l-2 border-[#4F8CFF]/30 rounded-bl-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
       </motion.div>
     </motion.div>
+    </a>
   );
 }

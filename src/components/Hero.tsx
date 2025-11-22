@@ -172,7 +172,10 @@ export function Hero() {
 
           {/* Download Resume Button */}
           <motion.a
-            href="https://export-download.canva.com/hw5yo/DAE9KRhw5yo/344/0-1848086456848291446.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20251115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251115T172831Z&X-Amz-Expires=55780&X-Amz-Signature=8c39e68d7720b14b457608e988c4ffa6f30096217cf47d2207438aeb954f6fdc&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27uiuxres.pdf&response-expires=Sun%2C%2016%20Nov%202025%2008%3A58%3A11%20GMT"
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+            download
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
             className="group relative px-8 py-4 rounded-xl backdrop-blur-xl border border-[#4F8CFF]/30 bg-[#4F8CFF]/5 text-white overflow-hidden"

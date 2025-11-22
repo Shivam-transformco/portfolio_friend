@@ -172,7 +172,7 @@ export function Hero() {
 
           {/* Download Resume Button */}
           <motion.a
-            href={`${import.meta.env.BASE_URL}resume.pdf`}
+            href="https://drive.google.com/uc?export=download&id=1U-GVKasEiS_SWljn_Fhyaaodwd25p5RV"
             target="_blank"
             rel="noopener noreferrer"
             download

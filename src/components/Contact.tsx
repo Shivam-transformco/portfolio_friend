@@ -8,6 +8,11 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
+const profiles = [
+  { name: "Behance", url: "https://www.behance.net/shrutikashyap8" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/shruti-kashyap-4566a61aa/" },
+];
+
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -45,12 +50,12 @@ export function Contact() {
       value: "Gurugram,Haryana",
       href: null,
     },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "9521547509",
-      href: "91-9521547509",
-    },
+    // {
+    //   icon: Phone,
+    //   label: "Phone",
+    //   value: "9521547509",
+    //   href: "91-9521547509",
+    // },
   ];
 
   return (
@@ -385,28 +390,28 @@ export function Contact() {
               </h3>
 
               <div className="flex gap-4">
-                {["Behance", "Linkedin"].map(
-                  (platform, index) => (
-                    <motion.a
-                      key={platform}
-                      href="#"
-                      initial={{ opacity: 0, scale: 0 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{
-                        duration: 0.4,
-                        delay: 0.5 + index * 0.1,
-                      }}
-                      viewport={{ once: true }}
-                      whileHover={{ y: -5, rotateZ: 5 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="flex-1 aspect-square rounded-xl bg-gradient-to-br from-[#4F8CFF]/10 to-[#B47CFF]/10 border border-white/10 hover:border-[#4F8CFF]/50 flex items-center justify-center text-white/80 hover:text-white transition-all group"
-                    >
-                      <span className="group-hover:scale-110 transition-transform">
-                        {platform}
-                      </span>
-                    </motion.a>
-                  ),
-                )}
+              {profiles.map(({ name, url }, index) => (
+                  <motion.a
+                    key={name}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.4,
+                      delay: 0.5 + index * 0.1,
+                    }}
+                    viewport={{ once: true }}
+                    whileHover={{ y: -5, rotateZ: 5 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="flex-1 aspect-square rounded-xl bg-gradient-to-br from-[#4F8CFF]/10 to-[#B47CFF]/10 border border-white/10 hover:border-[#4F8CFF]/50 flex items-center justify-center text-white/80 hover:text-white transition-all group"
+                  >
+                    <span className="group-hover:scale-110 transition-transform">
+                      {name}
+                    </span>
+                  </motion.a>
+                ))}
               </div>
             </motion.div>
           </motion.div>

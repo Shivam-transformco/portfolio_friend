@@ -219,7 +219,9 @@ export function Skills() {
             <div className="flex flex-wrap gap-3 justify-center">
               {[
                 { name: "Figma", isPrimary: true },
-                { name: "Beginner CAD Tools", isNew: true },
+                // { name: "Beginner CAD Tools", isNew: true },
+                { name: "Adobe Creative Suite (Photoshop, Illustrator, After Effects)", isPrimary: null },
+                
                 { name: "Basic Design Systems", isNew: false },
               ].map((tool, i) => (
                 <motion.span

@@ -4,6 +4,7 @@ import ride from "../assets/projects/ride.png";
 import trip from "../assets/projects/trip.png";
 import isro from "../assets/projects/isro.png";
 import drivezy from "../assets/projects/drivezy.png";
+import smartHome from "../assets/projects/smartHome.png";
 
 const projects = [
   {
@@ -34,6 +35,14 @@ const projects = [
     image: drivezy,
     behanceProfile: "https://www.behance.net/gallery/237244345/DRIVEZY-TRANSPORTATION-LANDING-PAGE"
   },
+  {
+    title: "Smart Home App",
+    category: "UI/IUX",
+    tags: ["UI/IUX", "UI/IUX"],
+    image: smartHome,
+    behanceProfile: "https://www.figma.com/proto/8oQrmZsbKdFM3b9820SLvP/smart-home-app?node-id=1-13&t=TRdLUJ0GIk6Can4H-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A13&show-proto-sidebar=1"
+  },
+
 ];
 
 export function ProjectGallery() {

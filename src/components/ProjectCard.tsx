@@ -103,7 +103,7 @@ export function ProjectCard({ title, category, tags, image, index,behanceProfile
             whileHover={{ x: 5 }}
             className="flex items-center gap-2 text-white/80 hover:text-[#4F8CFF] transition-colors group/btn"
           >
-            View Case Study
+            {title=="Drivezy - Landing Page" || title=="Smart Home App" ? "View Design" : "View Case Study"}
             <ArrowUpRight size={18} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
           </motion.button>
         </div>
